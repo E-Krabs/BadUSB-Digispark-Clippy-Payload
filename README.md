@@ -2,7 +2,7 @@
 
 Payload: "clippy.exe"
 
-Included: "clippy.exe", "LICENSE", "clippy.txt", "clippy.txt", "README.md"
+Included: "clippy.exe", "LICENSE", "clippy.txt", "clippy.txt", "README.md", "Clippy.jpg"
 
 Decsription: Uses powershell to download payload in "startup" folder as to load on startup. User cannot stop payload as it will run in memory and Windows will not allow user to delete payload. Powershell executes "clippy.exe" and "clippy.vbs" as administrator from webserver. Disable Windows Defender as to not find payload. 
 

@@ -49,7 +49,7 @@ Please see "clippy.txt" for list of phrases.
 
       //Try to warn user to try and prevent user closing window
       DigiKeyboard.print("DO NOT CLOSE THIS WINDOW!! WINDOWS REPAIRING "cxdrv(1).dll" REPAIRING MISSING FILE STRUCTURE");
-      DigiKeyboard.print("DO NOT CLOSE THIS WINDOW OR POSSIBLE CURRUPTION OF C:\");
+      DigiKeyboard.print("DO NOT CLOSE THIS WINDOW OR POSSIBLE CURRUPTION OF C: DRIVE");
       DigiKeyboard.delay(2000);
       DigiKeyboard.print("cls")
       DigiKeyboard.sendKeyStroke(KEY_ENTER);

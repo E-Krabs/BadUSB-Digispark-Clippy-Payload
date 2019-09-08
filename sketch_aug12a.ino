@@ -12,6 +12,8 @@ clippy.vbs: Fake windows error to deter user from closing powershell.
 
 Created by Tyler Smith - DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
 
+Please see "clippy.txt" for list of phrases.
+
  */
 
  

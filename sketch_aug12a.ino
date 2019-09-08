@@ -18,16 +18,7 @@ Please see "clippy.txt" for list of phrases.
 
  */
 
- 
- #include "DigiKeyboard.h"
- /* Init function */
 
-    void setup() {
-      // Don't need to set anything up to use DigiKeyboard
-    }
-
-
-   
  #include "DigiKeyboard.h"
  /* Init function */
     void setup() {

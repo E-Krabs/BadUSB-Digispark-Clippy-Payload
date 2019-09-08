@@ -4,7 +4,7 @@ Payload: clippy.exe
 
 Decsription: Uses powershell to download payload in "startup" folder as to load on startup. User cannot stop payload as it will run in memory and Windows will not allow user to delete payload. Powershell executes "clippy.exe" and "clippy.vbs" as administrator from webserver. Disable Windows Defender as to not find payload. 
 
-clippy.exe: Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97 to 2003). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
+clippy.exe: Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
 
 clippy.vbs: Fake windows error to deter user from closing powershell. 
 

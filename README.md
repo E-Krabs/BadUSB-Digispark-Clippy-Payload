@@ -19,3 +19,4 @@ How to upload:
 Upload sketch_aug12a.ino to Digispark.
 Put "clippy.exe", "clippy.txt", "clippy.vbs" in C:/xampp/htdocs/ (or wherever else your xampp host is located)
 Or put them in your host server if you dont have xampp.
+UPDATE: "CLIPPY.TXT" MUST BE IN SERVER (SERVES CRITICAL PURPOSE)

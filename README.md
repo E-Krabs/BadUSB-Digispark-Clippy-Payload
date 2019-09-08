@@ -1,4 +1,4 @@
-BadUSB-Digispark-CLippy-Payload for Digispark at https://github.com/DataDucks/BadUSB-Digispark-Clippy-Payload
+BadUSB-Digispark-Clippy-Payload for Digispark at https://github.com/DataDucks/BadUSB-Digispark-Clippy-Payload
 
 Payload: clippy.exe
 

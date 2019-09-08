@@ -72,6 +72,7 @@ Please see "clippy.txt" for list of phrases.
       digitalWrite(1, HIGH);
       // Restart computer payload will execute on startup ($StartupDir = [environment]::getfolderpath('Startup'))
       DigiKeyboard.println(F("Restart-Computer"));
+      DigiKeyboard.sendKeyStroke(KEY_ENTER);
   
       while(true){
         //do nothing

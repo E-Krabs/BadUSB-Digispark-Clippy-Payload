@@ -12,7 +12,11 @@ clippy.exe: Fun joke program creates an annoying Clippy/Clippit Office Assistant
 
 clippy.vbs: Fake windows error to deter user from closing powershell. 
 
-Created by Tyler Smith - DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
+Created by Tyler Smith on 9/2/2019 at [TIME] - DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
+
+Tested and refined by Tyler Smith on 9/8/2019 at [TIME]
+
+Final Build on 9/8/2019 at 1:12 AM - Web Release on 9/8/2019 at [TIME]
 
 Please see "clippy.txt" for list of phrases.
 

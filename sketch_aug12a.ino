@@ -2,6 +2,8 @@
 
 Digispark
 
+Upload .ino to Digispark
+
 Payload: clippy.exe
 
 Decsription: Uses powershell to download payload in "startup" folder as to load on startup. User cannot stop payload as it will run in memory and Windows will not allow user to delete payload. Powershell executes "clippy.exe" and "clippy.vbs" as administrator from webserver. Disable Windows Defender as to not find payload. 

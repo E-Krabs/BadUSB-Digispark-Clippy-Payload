@@ -10,7 +10,7 @@ Decsription: Uses powershell to download payload in "startup" folder as to load 
 
 "clippy.exe": Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
 
-"clippy.vbs": Fake windows error to deter user from closing powershell. 
+"clippy.vbs": Fake windows error to deter user from closing powershell (This is no longer included as powershell now runs hidden). 
 
 Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
 

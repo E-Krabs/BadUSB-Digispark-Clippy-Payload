@@ -12,7 +12,7 @@ Decsription: Uses powershell to download payload in "startup" folder as to load 
 
 "clippy.vbs": Fake windows error to deter user from closing powershell (This is no longer included as powershell now runs hidden). 
 
-Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/forum (Forums) - DataDucks.Web.Development@gmail.com
+Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/forum - DataDucks.Web.Development@gmail.com
 
 Tested and Refined by Tyler Smith on 9/8/2019 at [10:42 AM]
 

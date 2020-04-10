@@ -6,7 +6,7 @@ Upload .ino to Digispark
 
 Payload: clippy.exe
 
-Decsription: Uses powershell to download payload in "startup" folder as to load on startup. User cannot stop payload as it will run in memory and Windows will not allow user to delete payload. Powershell executes "clippy.exe" and "clippy.vbs" as administrator from webserver. Disable Windows Defender as to not find payload. 
+Decsription: Uses powershell to download payload in "startup" folder. Powershell executes "clippy.exe" as administrator from webserver. Disables Windows Defender. 
 
 "clippy.exe": Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
 
@@ -16,7 +16,9 @@ Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/f
 
 Tested and Refined by Tyler Smith on 9/8/2019 at [10:42 AM]
 
-Final Build on 9/8/2019 at 1:12 AM - Web Release on 9/8/2019 at [10:43 AM]
+Final Build on 9/8/2019 at 1:12 AM
+
+Refined by Tyler Smith on 4/10/2020 at [1:25 PM]
 
 Please see "clippy.txt" for list of phrases.
 

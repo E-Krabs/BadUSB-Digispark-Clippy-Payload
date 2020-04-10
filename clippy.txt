@@ -22,9 +22,5 @@ Unable to follow your instructions.
 Would you like me to go away?
 I thought you should know that today is [date].
 I noticed you have Internet Explorer installed on your system. You can use that to find things on the Internet.
-Why can't we just go back to the old days of Windows 95.
-Wonder what happens when you delete System32.
 Delete System32?
-Nobody misses me.
 Did you miss me?
-I wish I could go back to "Home.docx"

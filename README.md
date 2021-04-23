@@ -2,11 +2,9 @@
 
 Included: "clippy.exe", "LICENSE", "clippy.txt", "README.md", "Clippy.jpg"
 
-Decsription: Runs powershell hidden to download payload in "startup" folder. Powershell executes "clippy.exe" as administrator from webserver. Disables Windows Defender. 
+A rubber-ducky script that pops-up Clippy / Clippit from MS Word (version 97 to 2003) every 60 seconds. Created by RJL Pranks (http://rjlpranks.com/pranks/clippy) 
 
-"clippy.exe": Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
-
-Check out "LICENSE". Do what ever with it. If repurposed for something else (like, I am not responciple.
+Check out "LICENSE". Do what ever with it. I an not responsible for malicious use of this script.
 
 Script by NEDb - https://www.nedb.tk | nedb@cumallover.me
 "clippy.exe" created by RJL Pranks - http://rjlpranks.com/pranks/

